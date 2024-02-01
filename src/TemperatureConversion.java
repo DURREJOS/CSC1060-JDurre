@@ -9,10 +9,10 @@ public class TemperatureConversion {
 
         int fahrenheit = in.nextInt(); // connects the input to the scanner
 
-        double CelsiusConverter = (fahrenheit - 32) * 5/9; // double is used for
-        double kelvinConverter = (fahrenheit - 32) * (5/9) - 273.15; // double is used for
+        double CelsiusConverter = (fahrenheit - 32) * 5/9; // double is used for decimals
+        double kelvinConverter = (fahrenheit - 32) * (5/9) - 273.15; // double is used for decimals
 
         System.out.println( CelsiusConverter + " Degrees Celsius"); // prints output double converters I made
-        System.out.println( kelvinConverter + " kelvin"); // and then adds the words at the end in ""
+        System.out.println( kelvinConverter + " kelvin"); // and then adds the words at the end in "quotations"
     }
 }
