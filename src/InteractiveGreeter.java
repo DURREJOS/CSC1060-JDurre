@@ -15,19 +15,19 @@ public class InteractiveGreeter {
 
         in.nextLine();
 
-        System.out.println("Hi! " + name + " from " + area + ". You are " + age + " years old.");
         //put all information together to greet person
+        System.out.println("Hi! " + name + " from " + area + ". You are " + age + " years old.");
 
         System.out.println("What is your favorite activity?"); // input asking fav activity
         String active = in.nextLine(); // output activity
 
-        System.out.println("I hope you have fun doing " + active + "!");
         // stating their activity for them
+        System.out.println("I hope you have fun doing " + active + "!");
 
         System.out.println("How much would you like to donate?"); // input asking for donation
         int donate = in.nextInt(); // output amount of money
 
-        System.out.println("Thank you for your donation of $" + donate + ".");
         // ending greeting with amount donated
+        System.out.println("Thank you for your donation of $" + donate + ".");
     }
 }
