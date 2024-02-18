@@ -21,7 +21,7 @@ public class BottlesOfBeer {
             if (bottleNum <= 99) {
                 System.out.println();
                 System.out.println(bottleNum + " bottles of beer on the wall, " + bottleNum + " bottles of beer.");
-                System.out.println("Take one down and pass it around, " + bottleNum + " bottle of beer on the wall.");
+                System.out.println("Take one down and pass it around, " + bottleNum + " bottles of beer on the wall.");
                 bottleNum = bottleNum - 1;
             }
 
