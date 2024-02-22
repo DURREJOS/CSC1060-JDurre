@@ -20,21 +20,33 @@ public class Triangles {
             }
 
             if (size <= 50) { // connects the input to the next step if number entered correctly
-
+                int maxWidth = size*2-1;
                 System.out.println("Enter fill: ");
                 Character f = in.next().charAt(0);
 
                 // in English for understanding:
-                // start with a equals 0; where a is less than the size + 1; update with a + 1
-                for (a = 0; a < size + 1; a++) { // size +1
+                // start with a equals 1; where a is less// equal to size; update with a + 1
+                for (a = 1; a <= size; a++) {
+                    int spaces =(maxWidth -(2*a-1))/2;
 
-                    for (b = size; b > a; b--) {
+                    for (b = 1; b <= spaces; b++) {
                         System.out.print(" ");
                     }
-                    for (c = 0; c < (a * 2 - 1); c++) {
-                        System.out.print(f); // f is the character declared above!
+                    for (c = 1; c <= a; c++) {
+                        if(c % 2 ==0) {
+                            System.out.print(" ");
+                        }else {
+                            System.out.print(f);
+                        }
                     }
-                    System.out.println();
+                    for (c = a -1; c>=1; c--) {
+                        if(c % 2 ==0) {
+                            System.out.print(" ");
+                        }else {
+                            System.out.print(f);
+                        }
+                    }
+                    System.out.println("");
                 }
             }
             System.out.println("Would you like another triangle? (Y or N)");
